@@ -3,14 +3,99 @@
 		<meta charset="UTF-8">
 		<title>Title</title>
 		<link rel="stylesheet" href="../css/dist/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
 	</head>
 	<body> 
 
+
+		<div class="components--blog-post">
+			<div class="user-info-container">
+				<img src="../assets/images/profile.png" alt="">
+				<div class="user-info">
+					<h4>Jessie Holmes</h4>
+					<h6>29 Jul 2010 ・ Solutions Architecture</h6>
+				</div>
+			</div>
+			<h5>Token-based Authentication with JMeter</h5>
+			<h6>Start reading</h6>
+			<span></span>
+		</div>
+
+		<div class="divider">
+				
+		</div> 
+
+		<div class="components--slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+			  		<div class="swiper-slide">
+						<a href="#">
+							<h1>The 8 Pillars of Application Performance</h1> 
+							<span>12 min read</span> 
+						</a>
+			  		</div>
+			  		<div class="swiper-slide">
+						<a href="#">
+							<h1>The 3 Kings playing guitar in the north</h1>
+							<span>21 min read</span>
+						</a> 
+			  		</div>
+			  		<div class="swiper-slide">
+						<a href="#">
+							<h1>The 9 new technologic improvements</h1> 
+							<span>8 min read</span>
+						</a>
+					</div>
+				</div>
+			</div> 
+			<div class="swiper-paginate"></div>
+		</div>
 		
 		<div class="divider">
 				
+		</div> 
+
+		<div class="components--video-container">
+			<div class="video">
+				<a href="#">
+					<h5>Containers</h5>
+					<h3>Recap: Kubernetes</h3>
+					<div class="bottom">
+						<div class="icon-play"> 
+							<img src="../assets/icons/play.svg" alt="">
+						</div>
+						<span>2h ago</span>
+					</div>
+				</a>
+			</div>
+			<div class="video">
+				<a href="#">
+					<h5>Containers</h5>
+					<h3>How to create an npm package</h3>
+					<div class="bottom">
+						<div class="icon-play old"> 
+							<img src="../assets/icons/play-filled.svg" alt="">
+						</div>
+						<span>Yesterday</span>
+					</div>
+				</a>
+			</div>
 		</div>
+
+
+		<div class="divider">		
+		</div> 
+
 		
-		
+		<script>
+			var swiper = new Swiper('.components--slider .swiper-container', {
+				spaceBetween: 30,
+      			pagination: {
+       				el: '.components--slider .swiper-paginate',
+        			clickable: true,
+      			},
+			});
+		  </script>
 	</body>
 </html>
